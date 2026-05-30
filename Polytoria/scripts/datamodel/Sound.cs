@@ -92,7 +92,7 @@ public sealed partial class Sound : Dynamic
 		get => _volume;
 		set
 		{
-			_volume = Mathf.Clamp(value, 0, 1);
+			_volume = Mathf.Clamp(value, 0, 2);
 			UpdateVolume();
 			OnPropertyChanged();
 		}
